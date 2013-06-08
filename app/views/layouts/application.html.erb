@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BasicWordPress</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="container">
+	<div id="user-menu"><a href="#">LOGIN</a></div>
+
+     <div id="header">	
+     	<div class="clear"></div>
+     	<div id="main">
+     		<div id="banner">
+     			<div id="logo"><img src="/assets/logo.png" alt="Logo" /></div>
+     			<div id="picture"><img src="/assets/girls.png" alt="Main Banner" /></div>
+     		</div>
+     		<div id="nav">
+     			<div id="menu">
+     				<ul class="main-menu">
+     					<li class="active">Incio</li>
+     					<li>Conferencias</li>
+     					<li>Expositores</li>
+     					<li>Uno a Uno</li>
+     					<li>Agenda</li>
+     					<li>Contacto</li>
+     					<li>Registro</li>
+     				</ul>
+     			</div>
+     			<div id="social">
+     				<span id="tag-social">Siguenos:</span>
+     				<img src="/assets/facebook.png">
+     				<img src="/assets/twitter.png">
+     				<img src="/assets/youtube.png">
+     			</div>
+     		</div>
+     	</div>
+     </div><!-- END HEADER -->
+     <div class="clear"></div>
+     <div id="wrapper">
+     	<div id="info">
+		<%= yield %>   
+		</div>  	
+     </div><!-- END WRAPPER -->
+     
+     <div id="footer">
+     	<p><a href="#">Rights 2013</a></p>
+     </div><!-- END FOOTER -->
+</div><!-- END CONTAINER -->
+
+
+</body>
+</html>
+
+
